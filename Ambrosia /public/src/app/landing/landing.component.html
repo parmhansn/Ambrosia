@@ -1,0 +1,84 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+<style>
+
+  html,body{
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    .container{
+      background-image: url('./assets/images/burger.jpg');
+
+      background-size: cover;
+
+      background-position: center center;
+
+      background-repeat: no-repeat;
+
+      height: 100vh;
+
+      max-width: 100%;
+   
+
+    }
+
+    .definition{
+      margin-top: -17px;
+      color: white;
+    }
+
+    .noun{
+      margin-top: -17px;
+      color: white;
+    }
+
+    .header{
+      margin-top: 120px;
+      margin-left: 605px;
+    }
+
+    li {
+      list-style-type: none;
+      margin-top: 2px;
+      margin-right: 18px;
+    }
+
+
+
+
+
+</style>
+
+
+
+
+<div style="text-align:center">
+  <div class="container">
+      <div class="row">
+        <!-- <div class="col-sm"> -->
+          <div class="header">
+            <h1>Ambrosia</h1>
+            <p class="definition">am·​bro·​sia | \am-ˈbrō-zh(ē-)ə</p>
+            <p class='noun'>
+              noun GREEK & ROMAN MYTHOLOGY
+              <br>
+              the food and drinks of the gods.</p>
+          </div>
+          <!-- </div> -->
+          <div class="col-sm">
+            <a [routerLink]="['/login']"><button class="btn btn-primary">Login</button> </a>
+            <a [routerLink]="['/register']"><button class="btn btn-primary">Register</button></a>
+          </div>
+        </div>
+        <ul>
+          <li>Restaurants</li>
+        </ul>
+    </div>
+
+  </div>
+
+

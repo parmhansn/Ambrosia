@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <style>
+    html,body{
+      /* background-image: url('./assets/images/pizza.jpg'); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+      }
+
+    .container{
+      height: 100%;
+      align-content: center;
+      display: inline-block;
+    }
+
+    .card{
+      height: 370px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left:515px;
+      width: 400px;
+      background-color: rgba(0,0,0,0.5) !important;
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card">
+        <div class="card-header">
+          <h3>Register</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i></span>
+              </div>
+              First Name:
+              <input type="text" class="form-control" placeholder="First Name">
+
+            </div>
+            <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-user"></i></span>
+                </div>
+                Last Name:
+                <input type="text" class="form-control" placeholder="Last Name">
+  
+            </div>
+
+            <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-user"></i></span>
+                </div>
+                Email:
+                <input type="text" class="form-control" placeholder="Email">
+  
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-key"></i></span>
+              </div>
+              Password:
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Register" class="btn float-right login_btn">
+            </div>
+            <div class="form-group">
+                <a [routerLink]="['']"><button class="btn btn-primary">Cancel</button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
